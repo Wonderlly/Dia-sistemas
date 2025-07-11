@@ -1,0 +1,94 @@
+.sectioncontent {
+    margin-top: 120px;
+    width: 90%;
+    position: relative;
+    border: 1px solid var(--border-color);
+    background-color: var(--bg2-color);
+    transition: background-color 0.3s, border 0.3s;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.2);
+    border-radius: 1vh;
+    padding: 2%;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logodia {
+    width: 30%;
+    margin-left: 0;
+    margin-bottom: 2rem;
+    
+}
+
+h1 {
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+}
+
+.tables-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.table-wrapper {
+    flex: 1;
+    min-width: 0; /* Garante que as tabelas não saiam do contêiner em telas menores */
+}
+
+h2 {
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--bg3-color);
+    transition: background-color 0.3s;
+    border-radius: 1vh;
+    overflow: hidden;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.2);
+}
+
+thead {
+    background-color: #11114e;
+    color: #fff;
+}
+
+th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+    transition: border 0.3s;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 50px;
+}
+
+th {
+    font-weight: bold;
+}
+.tabela{
+    font-size: 15px;
+}
+tbody tr:hover {
+    background-color: var(--hover2-color);
+}
+
+@media (max-width: 768px) {
+    .tables-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 0.5rem;
+    }
+}

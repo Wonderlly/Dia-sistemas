@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório 3314</title>
+    <script src="../js/jsgeral.js"></script>
+    <script src="../js/js3314.js"></script>
+    <link rel="stylesheet" href="../css/style3314.css">
+</head>
+
+    <main-component></main-component>
+
+<body>
+    
+    <main class="content">
+
+        <section class="sectioncontent">
+            <h1>Relatório 3314 - Tabela de Clientes</h1>
+
+            <div class="table-filtros">
+                <input type="text" placeholder="Cod. Cliente" onkeyup="filtrarTabela(0, this.value)">
+
+                <input type="text" placeholder="Nome Cliente" onkeyup="filtrarTabela(1, this.value)">
+
+                <input type="text" placeholder="Filial" onkeyup="filtrarTabela(2, this.value)">
+
+                <input type="text" placeholder="Região" onkeyup="filtrarTabela(4, this.value)">
+            </div>
+
+            <table id="tabela" class="table-clientes">
+                <thead>
+                    <tr>
+                        <th>Código Cliente</th>
+                        <th>Nome do Cliente</th>
+                        <th>Código Filial</th>
+                        <th>Razão Social</th>
+                        <th>Região</th>
+                        <th>Descrição Região</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Maria</td>
+                        <td>1</td>
+                        <td>Ex1</td>
+                        <td>3</td>
+                        <td>Ex2</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Maria J.</td>
+                        <td>1</td>
+                        <td>Ex3</td>
+                        <td>19</td>
+                        <td>Ex4</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Pedro</td>
+                        <td>11</td>
+                        <td>Ex5</td>
+                        <td>25</td>
+                        <td>Ex6</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

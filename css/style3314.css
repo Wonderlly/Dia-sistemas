@@ -1,0 +1,66 @@
+.sectioncontent {
+    margin-top: 120px;
+    width: 90%;
+    position: relative;
+    border: 1px solid var(--border-color);
+    background-color: var(--bg2-color);
+    transition: background-color 0.3s, border 0.3s;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.2);
+    border-radius: 1vh;
+    padding: 2%;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+}
+
+.table-filtros {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    gap: 10px;
+}
+
+.table-filtros input {
+    width: 25%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 1vh;
+    background-color: var(--bg3-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, border 0.3s;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--bg3-color);
+    transition: background-color 0.3s;
+    border-radius: 1vh;
+    overflow: hidden;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.2);
+}
+
+thead {
+    background-color: #11114e;
+    color: #fff;
+}
+
+th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+    transition: border 0.3s;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 50px;
+}
+
+tbody tr:hover {
+    background-color: var(--hover2-color);
+}

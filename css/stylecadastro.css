@@ -1,0 +1,94 @@
+.formulario {
+    top: 120px;
+    width: 22%;
+    height: 70%;
+    position: relative;
+    border: 1px solid var(--border-color);
+    background-color: var(--bg2-color);
+    transition: background-color 0.3s, border 0.3s;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.2);
+    border-radius: 1vh;
+    padding: 2%;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.div-btntema {
+    margin-bottom: 2rem;
+}
+
+.temabtn {
+    position: absolute;
+    right: 0;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    margin-bottom: 2rem;
+}
+
+.div-user {
+    display: flex;
+    flex-direction: column;
+}
+
+.div-senha {
+    display: flex;
+    flex-direction: column;
+}
+
+.div-codwin {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.formulario label {
+    margin-bottom: 5px;
+}
+
+.formulario input {
+    padding: 8px;
+    border: 1px solid var(--border-color);
+    border-radius: 1vh;
+    background-color: var(--bg3-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, border 0.3s;
+    margin-bottom: 1rem;
+}
+
+.div-botao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    font-weight: bold;
+}
+
+.div-botao a {
+    color: var(--text-color);
+}
+
+.btn-cadastro {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #11114e;
+    width: 60%;
+    color: white;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 1vh;
+    border: none;
+    box-shadow: none;
+}
+
+.btn-cadastro:hover {
+    background-color: #1b1b63;
+}

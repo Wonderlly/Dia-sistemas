@@ -1,0 +1,143 @@
+.formulario {
+    top: 120px;
+    width: 45%;
+    position: relative;
+    border: 1px solid var(--border-color);
+    background-color: var(--bg2-color);
+    transition: background-color 0.3s, border 0.3s;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.2);
+    border-radius: 1vh;
+    padding: 2%;
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario h1 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    padding: 8px;
+    border: 1px solid var(--border-color);
+    border-radius: 1vh;
+    background-color: var(--bg2-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, border 0.3s;
+}
+
+.form-datas {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 1%;
+}
+
+.formdata {
+    width: 50%;
+}
+
+.formdata input {
+    background-color: var(--bg3-color);
+    border-color: var(--border-color);
+    transition: background-color 0.3s, border 0.3s;
+    cursor: pointer;
+}
+
+.formdata input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: var(--calendar-icon);
+    cursor: pointer;
+}
+
+.select-group {
+    position: relative;
+}
+
+.dropdown-filialbtn {
+    width: 100%; /* Largura total */
+    padding: 10px; /* Padding */
+    border: 1px solid var(--border-color); /* Borda cinza */
+    border-radius: 5px; /* Bordas arredondadas */
+    background-color: var(--bg3-color);
+    transition: background-color 0.3s, border 0.3s;
+    color: var(--text-color);
+    cursor: pointer; /* Mão ao passar o mouse */
+    text-align: left; /* Texto alinhado à esquerda */
+}
+
+.dropdown-filialcontainer {
+    display: none; /* Inicialmente escondido */
+    position: absolute; /* Para sobreposição */
+    top: 40px; /* Abaixo do botão */
+    left: 0;
+    width: 100%; /* Largura total */
+    background-color: var(--bg3-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, border 0.3s;
+    border: 1px solid var(--border-color); /* Borda cinza */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+    z-index: 1; /* Para ficar acima de outros elementos */
+}
+
+.dropdown-filialcontainer label {
+    display: block; /* Cada checkbox em uma nova linha */
+    padding: 10px; /* Padding */
+    cursor: pointer; /* Mão ao passar o mouse */
+}
+
+.dropdown-filialcontainer input {
+    margin-right: 10px; /* Espaço à direita do checkbox */
+    cursor: pointer;
+}
+
+.colunas {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.coluna {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.coluna input,label:hover {
+    cursor: pointer;
+}
+
+.div-btngerar {
+    display: flex;
+    justify-content: center;
+}
+
+.btngerar {
+    background-color: #11114e;
+    color: white;
+    padding: 18px;
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 1vh;
+    box-shadow: none;
+    border: none;
+}
+
+.btngerar:hover {
+    background-color: #1b1b63;
+}
